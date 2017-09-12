@@ -5,10 +5,10 @@ import {
 }
 from 'react-native';
 
-const Button = ({ onPress }) => { //equal to function in Album Detail button Parent to Child
+const Button = ({ onPress, children }) => { //equal to function in Album Detail button Parent to Child
     return (
         <TouchableOpacity onPress={onPress} style = {styles.buttonStyle}>
-            <Text style={styles.textStyle} >Click me!!!!</Text>
+            <Text style={styles.textStyle} >{children}</Text>
         </TouchableOpacity>
     )
 };

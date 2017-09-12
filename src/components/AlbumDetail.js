@@ -5,11 +5,12 @@ import Button from './Button'
 import {
     View,
     Image,
-    Text
+    Text,
+    Linking
 } from 'react-native';
 
 const AlbumDetail = ({ data }) => { //props.data is my data from album list passing to card
-    const { title, artist, thumbnail_image, image } = data;
+    const { title, artist, thumbnail_image, image, url } = data;
     return (
 
         <Card>
@@ -30,7 +31,9 @@ const AlbumDetail = ({ data }) => { //props.data is my data from album list pass
 
 
             <CardSection>
-                <Button onPress={() => console.log('title', title)}/>
+                <Button onPress={() => Linking.openURL(url)}>
+                    Buy Now
+                </Button>
             </CardSection>
         </Card>
 
