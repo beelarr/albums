@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import CardSection from './CardSection'
+import Button from './Button'
 import {
     View,
     Image,
@@ -21,8 +22,15 @@ const AlbumDetail = ({ data }) => { //props.data is my data from album list pass
                     <Text>{artist}</Text>
                 </View>
             </CardSection>
+
+
             <CardSection>
                 <Image style={styles.imageStyle} source = {{uri: image}}/>
+            </CardSection>
+
+
+            <CardSection>
+                <Button onPress={() => console.log('title', title)}/>
             </CardSection>
         </Card>
 

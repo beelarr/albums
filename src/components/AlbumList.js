@@ -29,9 +29,7 @@ class AlbumList  extends Component {
         console.log('this.state ALBUMS', this.state.albums);
         return(
             <ScrollView>
-                <View>
                     {this.renderAlbums()}
-                </View>
             </ScrollView>
         )
     };
