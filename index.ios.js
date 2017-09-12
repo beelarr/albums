@@ -1,16 +1,23 @@
 //import destructuring
 import React from 'react';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 import {
-    Text,
-    AppRegistry
+    View,
+    AppRegistry,
+
         }
 from 'react-native';
 
 
 
 const App =  () => (
-        <Text>Some Text</Text>
+    <View>
+        <Header headerText={'Albums'}/>
+        <AlbumList/>
+    </View>
     );
+
 
 
 
