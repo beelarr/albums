@@ -17,7 +17,7 @@ class AlbumList  extends Component {
             .then(response => this.setState({ albums: response.data}));
     }
 
-    renderAlbums() {
+    renderAlbums() { //passing to album Detail data is my album data
        return this.state.albums.map(album =>
            <AlbumDetail key={album.title} data = {album} />
        );
