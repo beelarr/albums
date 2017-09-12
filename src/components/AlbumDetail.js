@@ -24,7 +24,6 @@ const AlbumDetail = ({ data }) => { //props.data is my data from album list pass
             <CardSection>
                 <Image style={styles.imageStyle} source = {{uri: image}}/>
             </CardSection>
-
         </Card>
 
     )

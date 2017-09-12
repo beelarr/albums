@@ -4,6 +4,7 @@ import AlbumDetail from './AlbumDetail';
 
 import {
     View,
+    ScrollView
 }
 from 'react-native';
 
@@ -27,9 +28,11 @@ class AlbumList  extends Component {
     render() {
         console.log('this.state ALBUMS', this.state.albums);
         return(
-            <View>
-                {this.renderAlbums()}
-            </View>
+            <ScrollView>
+                <View>
+                    {this.renderAlbums()}
+                </View>
+            </ScrollView>
         )
     };
 }
